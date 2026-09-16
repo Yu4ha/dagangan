@@ -21,6 +21,10 @@
     background:var(--paper);
     color:var(--ink);
     font-family:'IBM Plex Sans', sans-serif;
+    padding-bottom: 76px;
+  }
+  @media (min-width: 768px){
+    body{ padding-bottom: 0; }
   }
   .font-display{font-family:'Fraunces', serif;}
   .font-mono{font-family:'IBM Plex Mono', monospace;}
@@ -36,6 +40,7 @@
     border-top: 1px solid var(--line);
   }
   .spec-row:last-child{border-bottom: 1px solid var(--line);}
+  .spec-row span:last-child{ text-align:right; }
 
   .photo-frame{
     position:relative;
@@ -66,60 +71,61 @@
 
   <!-- NAV -->
   <header class="border-b hairline">
-    <div class="max-w-5xl mx-auto px-6 py-5 flex items-center justify-between">
-      <span class="font-display text-lg tracking-tight">Lifebook U939</span>
-      <a href="#kontak" class="font-mono text-sm px-4 py-2 border hairline hover:bg-[var(--ink)] hover:text-[var(--paper)] transition-colors">
+    <div class="max-w-5xl mx-auto px-5 md:px-6 py-4 md:py-5 flex items-center justify-between">
+      <span class="font-display text-base md:text-lg tracking-tight">Lifebook U939</span>
+      <a href="#kontak" class="hidden md:inline-block font-mono text-sm px-4 py-2 border hairline hover:bg-[var(--ink)] hover:text-[var(--paper)] transition-colors">
         Hubungi Penjual
       </a>
+      <span class="md:hidden font-display text-lg">Rp 4,2jt</span>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="max-w-5xl mx-auto px-6 pt-14 pb-16 md:pt-20 md:pb-24 grid md:grid-cols-5 gap-10 items-center">
-    <div class="md:col-span-2 fade-in">
-      <p class="font-mono text-sm text-[var(--ink-soft)] mb-4">Laptop bisnis ultraportable · 2019</p>
-      <h1 class="font-display text-4xl md:text-5xl leading-[1.08] mb-6">
+  <section class="max-w-5xl mx-auto px-5 md:px-6 pt-8 pb-10 md:pt-20 md:pb-24 grid md:grid-cols-5 gap-6 md:gap-10 items-center">
+    <div class="order-2 md:order-1 md:col-span-3 photo-frame aspect-[4/3] fade-in">
+      <img src="assets/IMG_20260915_194054.jpg" alt="Fujitsu Lifebook U939 tampak depan">
+    </div>
+    <div class="order-1 md:order-2 md:col-span-2 fade-in">
+      <p class="font-mono text-xs md:text-sm text-[var(--ink-soft)] mb-3 md:mb-4">Laptop bisnis ultraportable · 2019</p>
+      <h1 class="font-display text-3xl md:text-5xl leading-[1.1] mb-4 md:mb-6">
         Fujitsu Lifebook U939
       </h1>
-      <p class="measure text-[var(--ink-soft)] leading-relaxed mb-8">
-        Core i7 generasi ke-8 dengan performa yang jauh di atas laptop entry-level baru di harga yang sama sekarang siap pindah tangan.
+      <p class="measure text-sm md:text-base text-[var(--ink-soft)] leading-relaxed mb-6 md:mb-8">
+        Core i7 generasi ke-8 dengan performa yang jauh di atas laptop entry-level baru di harga yang sama, sekarang siap pindah tangan.
       </p>
-      <div class="flex items-baseline gap-3 mb-8">
-        <span class="font-display text-4xl">Rp 4.200.000</span>
-        <span class="font-mono text-sm text-[var(--ink-soft)]">nego halus</span>
+      <div class="flex flex-wrap items-baseline gap-2 md:gap-3 mb-6 md:mb-8">
+        <span class="font-display text-3xl md:text-4xl">Rp 4.200.000</span>
+        <span class="font-mono text-xs md:text-sm text-[var(--ink-soft)]">nego halus</span>
       </div>
-      <a href="#kontak" class="inline-block font-mono text-sm px-6 py-3 bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] transition-colors">
+      <a href="#kontak" class="hidden md:inline-block font-mono text-sm px-6 py-3 bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)] transition-colors">
         Tanya ketersediaan
       </a>
-    </div>
-    <div class="md:col-span-3 photo-frame aspect-[4/3] fade-in">
-      <img src="assets/IMG_20260915_194054.jpg" alt="Fujitsu Lifebook U939 tampak depan">
     </div>
   </section>
 
   <!-- WHY IT WINS -->
   <section class="border-y hairline bg-[var(--paper-2)]">
-    <div class="max-w-5xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
+    <div class="max-w-5xl mx-auto px-5 md:px-6 py-8 md:py-12 grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
       <div>
-        <p class="font-display text-2xl mb-2">4.8 GHz</p>
+        <p class="font-display text-xl md:text-2xl mb-1.5 md:mb-2">4.8 GHz</p>
         <p class="text-sm text-[var(--ink-soft)] leading-relaxed">Kecepatan boost i7-8665U, cukup untuk multitasking berat dan kerja sehari-hari tanpa lag.</p>
       </div>
       <div>
-        <p class="font-display text-2xl mb-2">i7-8665U</p>
+        <p class="font-display text-xl md:text-2xl mb-1.5 md:mb-2">i7-8665U</p>
         <p class="text-sm text-[var(--ink-soft)] leading-relaxed">Performa jauh di atas laptop Celeron/entry-level baru di rentang harga yang sama.</p>
       </div>
       <div>
-        <p class="font-display text-2xl mb-2">Siap pakai</p>
+        <p class="font-display text-xl md:text-2xl mb-1.5 md:mb-2">Siap pakai</p>
         <p class="text-sm text-[var(--ink-soft)] leading-relaxed">Windows 11 Pro + Office 2019 sudah terpasang. Tinggal nyalakan, langsung kerja.</p>
       </div>
     </div>
   </section>
 
   <!-- SPEC SHEET -->
-  <section class="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
+  <section class="max-w-5xl mx-auto px-5 md:px-6 py-10 md:py-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
     <div>
-      <h2 class="font-display text-2xl mb-6">Spesifikasi</h2>
-      <div class="font-mono text-sm">
+      <h2 class="font-display text-xl md:text-2xl mb-4 md:mb-6">Spesifikasi</h2>
+      <div class="font-mono text-xs md:text-sm">
         <div class="spec-row">
           <span class="text-[var(--ink-soft)]">Processor</span>
           <span>Intel Core i7-8665U</span>
@@ -164,15 +170,15 @@
     </div>
 
     <div>
-      <h2 class="font-display text-2xl mb-6">Kondisi barang</h2>
-      <ul class="space-y-4 text-sm leading-relaxed">
+      <h2 class="font-display text-xl md:text-2xl mb-4 md:mb-6">Kondisi barang</h2>
+      <ul class="space-y-3 md:space-y-4 text-sm leading-relaxed">
         <li class="flex gap-3">
           <span class="font-mono text-[var(--accent)] shrink-0">✓</span>
           <span>Body mulus secara keseluruhan, fungsi keyboard, trackpad, port, dan kamera normal.</span>
         </li>
         <li class="flex gap-3">
           <span class="font-mono text-[var(--accent)] shrink-0">✓</span>
-          <span>Baterai masih menyala normal disarankan untuk pemakaian rumah/kantor.</span>
+          <span>Baterai masih menyala normal, disarankan untuk pemakaian rumah/kantor.</span>
         </li>
         <li class="flex gap-3">
           <span class="font-mono text-[var(--ink-soft)] shrink-0">–</span>
@@ -184,7 +190,7 @@
         </li>
       </ul>
 
-      <div class="mt-8 p-4 border hairline bg-[var(--paper-2)]">
+      <div class="mt-6 md:mt-8 p-4 border hairline bg-[var(--paper-2)]">
         <p class="font-mono text-sm text-[var(--ink-soft)] mb-1">Bonus termasuk dalam harga</p>
         <p class="text-sm">Keyboard Rexus K87M + Mouse Rexus</p>
       </div>
@@ -192,16 +198,16 @@
   </section>
 
   <!-- GALLERY -->
-  <section class="max-w-5xl mx-auto px-6 pb-16">
-    <h2 class="font-display text-2xl mb-6">Foto kondisi asli</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+  <section class="max-w-5xl mx-auto px-5 md:px-6 pb-10 md:pb-16">
+    <h2 class="font-display text-xl md:text-2xl mb-4 md:mb-6">Foto kondisi asli</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-2.5 md:gap-3">
       <div class="photo-frame aspect-square">
         <img src="assets/IMG_20260915_194215.jpg" alt="Fujitsu Lifebook U939 tampak samping">
       </div>
       <div class="photo-frame aspect-square">
         <img src="assets/WhatsApp Image 2026-09-16 at 13.45.29.jpeg" alt="Fujitsu Lifebook U939 tampak lain">
       </div>
-      <div class="photo-frame aspect-square">
+      <div class="photo-frame aspect-square col-span-2 md:col-span-1">
         <img src="assets/WhatsApp Image 2026-09-16 at 13.45.30.jpeg" alt="Fujitsu Lifebook U939 tampak lain">
       </div>
     </div>
@@ -209,9 +215,9 @@
 
   <!-- CONTACT -->
   <section id="kontak" class="border-t hairline">
-    <div class="max-w-5xl mx-auto px-6 py-16 md:py-20 text-center">
-      <h2 class="font-display text-3xl mb-4">Tertarik?</h2>
-      <p class="measure mx-auto text-[var(--ink-soft)] mb-8">
+    <div class="max-w-5xl mx-auto px-5 md:px-6 py-12 md:py-20 text-center">
+      <h2 class="font-display text-2xl md:text-3xl mb-3 md:mb-4">Tertarik?</h2>
+      <p class="measure mx-auto text-sm md:text-base text-[var(--ink-soft)] mb-6 md:mb-8">
         Hubungi langsung untuk cek ketersediaan, nego harga, atau janjian COD.
       </p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center">
@@ -219,18 +225,28 @@
           Chat WhatsApp
         </a>
         <span class="font-mono text-sm px-6 py-3 border hairline">
-          COD: Cikarang/Bekasi 
+          COD: Cikarang/Bekasi
         </span>
       </div>
     </div>
   </section>
 
   <footer class="border-t hairline">
-    <div class="max-w-5xl mx-auto px-6 py-6 text-xs font-mono text-[var(--ink-soft)] flex justify-between">
+    <div class="max-w-5xl mx-auto px-5 md:px-6 py-5 md:py-6 text-xs font-mono text-[var(--ink-soft)] flex justify-between">
       <span>Fujitsu Lifebook U939</span>
       <span>Rp 4.200.000</span>
     </div>
   </footer>
+
+  <!-- STICKY CTA - hanya di HP -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 border-t hairline bg-[var(--paper)] px-4 py-3 flex gap-2 z-10">
+    <a href="https://wa.me/6285792062067" class="flex-1 text-center font-mono text-sm px-4 py-3 bg-[var(--ink)] text-[var(--paper)]">
+      Chat WhatsApp
+    </a>
+    <a href="#kontak" class="font-mono text-sm px-4 py-3 border hairline">
+      Detail
+    </a>
+  </div>
 
 </body>
 </html>
